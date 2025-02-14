@@ -1,0 +1,9 @@
+- name: Создание папки на удаленном сервере
+  file:
+    path: /home/osboxes/project/test-folders
+    state: directory
+
+- name: Копирование файла на удалённый сервер
+  copy:
+    src: /home/osboxes/project/test-folders/file.txt
+    dest: /home/osboxes/project/test-folders/file.txt

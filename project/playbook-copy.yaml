@@ -1,0 +1,15 @@
+- name: Копирование локальных файлов на сервер
+  hosts: server
+  #become: yes  # Используйте, если необходимо повысить привилегии
+  roles:
+    - copy_files
+
+#    - name: Создание папки на удаленном сервере
+#      file:
+#        path: /home/osboxes/project/test-folders  # Путь к создаваемой папке
+#        state: directory
+#
+#    - name: Копирование файла на удалённый сервер
+#      copy:
+#        src: /home/osboxes/project/test-folders/file.txt  # Путь к локальному файлу
+#        dest: /home/osboxes/project/test-folders/file.txt  # Путь на удалённом сервере
