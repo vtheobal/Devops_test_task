@@ -10,7 +10,8 @@
 
 
 # Задание 1: ansible
-Написать простенький ansible-playbook условия:
+[Написать простенький ansible-playbook условия:](https://github.com/vtheobal/Devops_test_task/tree/main/ex1)
+
 
 - структуру папок создать самому :
 - в hosts.ini записать группу серверов , группу назвать server
@@ -21,7 +22,7 @@
 
 
 # Задание 2: bash
-Написать простенький скрипт:
+[Написать простенький скрипт:](https://github.com/vtheobal/Devops_test_task/tree/main/ex2)
 
 - шебанг баш
 - в директории логов ищет внутри файлов слово php7.4 и считает кол-во строк совпадения
@@ -34,7 +35,7 @@
 
 
 # Задание 3: docker 
-Написать простенький docker-compose файл для запуска: 
+[Написать простенький docker-compose файл для запуска:](https://github.com/vtheobal/Devops_test_task/tree/main/ex3)
 
 В docker-compose условия.
 - 2 сервиса Nginx и PHP имена такие же как сервис

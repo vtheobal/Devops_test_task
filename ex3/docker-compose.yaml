@@ -1,0 +1,25 @@
+services:
+  nginx: 
+    image: nginx:1.25
+    ports:
+      - 80:1234
+    volumes:
+      - './src:/var/www/html'
+      - './docker/nginx/conf.d:/etc/nginx/conf.d'
+    depends_on:
+      - php
+    networks:
+      - vita
+  php:
+    image: php:7.4-fpm
+    volumes:
+      - './src:/var/www/html'
+      - '.:/var/local/sandboxes/dev/www'
+    environment:
+      - HP_FPM_LISTEN=0.0.0.0:9000
+    networks:
+      - vita
+
+networks:
+  vita:
+    driver: bridge
