@@ -90,10 +90,10 @@ services:
   php:
     image: php:7.4-fpm
     volumes:
-    	- './src:/var/www/html'
-		- '.:/var/local/sandboxes/dev/www'
+      - './src:/var/www/html'
+      - '.:/var/local/sandboxes/dev/www'
     environment:
-    	- HP_FPM_LISTEN=0.0.0.0:9000
+      - HP_FPM_LISTEN=0.0.0.0:9000
 ```
 ---
 
